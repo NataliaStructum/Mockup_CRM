@@ -1,0 +1,260 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Información del cliente"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Seleciona un cliente",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"OnValueChange": "/crmMock/Rules/Propuestas/Rule_Redibujar.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true,
+								"Placeholder": "Buscar ..."
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/crmMock/Services/com_sap_edm_sampleservice_v4.service",
+									"EntitySet": "Customers"
+								},
+								"ObjectCell": {
+									"PreserveIconStackSpacing": false,
+									"Title": "{FirstName} {LastName}",
+									"Visible": true
+								},
+								"ReturnValue": "{CustomerID}"
+							}
+						}
+					]
+				},
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "Cod SAP: {CustomerID}",
+						"Footnote": "Dirección: {Street} {HouseNumber}",
+						"Description": "Telefono: {PhoneNumber}",
+						"DetailImage": "sap-icon://person-placeholder",
+						"DetailImageIsCircular": false,
+						"BodyText": "Email: {EmailAddress}",
+						"HeadlineText": "{FirstName} {LastName}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Target": {
+							"Service": "/crmMock/Services/com_sap_edm_sampleservice_v4.service",
+							"EntitySet": "Customers",
+							"QueryOptions": "$filter=CustomerID eq {{#Page:AgregarCotizacion/#Control:FormCellListPicker0/#Value/#First/ReturnValue}}"
+						}
+					},
+					"Visible": false
+				},
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Agregar Producto",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://add",
+							"ImagePosition": "Trailing",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/crmMock/Pages/Propuestas/AgregarProducto.page"
+								}
+							}
+						}
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					}
+				},
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/crmMock/Services/com_sap_edm_sampleservice_v4.service",
+						"EntitySet": "Products",
+						"QueryOptions": "$top=2"
+					},
+					"_Name": "SectionObjectTable0",
+					"Header": {
+						"_Name": "SectionHeader2",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Productos"
+					},
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{Name}",
+						"Subhead": "Fecha entrega: 20 jun 2024",
+						"Footnote": "Total: $(C,{Price},{CurrencyCode})",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "Cant: 2 {QuantityUnit}",
+						"SubstatusText": "IVA: $(C,{Price},{CurrencyCode})",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"AccessoryButtonIcon": "sap-icon://edit",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://product"
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1",
+					"Controls": [
+						{
+							"Value": "Enter Date",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "FormCellDatePicker0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Validez hasta:",
+							"IsEditable": true,
+							"Mode": "Date"
+						},
+						{
+							"Value": "$ 45205",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Valor total",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Finalizar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/ClosePage.action",
+								"Properties": {
+									"NavigateBackToPage": "cotizaciones"
+								}
+							}
+						}
+					]
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "AgregarCotizacion",
+	"Caption": "Nueva Cotización",
+	"PrefersLargeCaption": true
+}

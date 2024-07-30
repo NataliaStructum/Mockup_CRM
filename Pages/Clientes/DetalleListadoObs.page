@@ -1,0 +1,96 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/crmMock/Services/com_sap_edm_sampleservice_v4.service",
+						"EntitySet": "SalesOrderHeaders",
+						"QueryOptions": "$expand=Customer"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "El cliente no tiene observaciones",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{SalesOrderID} {Customer/Street}",
+						"Subhead": "{Customer/FirstName} {Customer/LastName}",
+						"Description": "{CreatedAt} {CurrencyCode} {CustomerID} {GrossAmount} {LifeCycleStatus} {LifeCycleStatusName} {NetAmount} {SalesOrderID} {TaxAmount}",
+						"DisplayDescriptionInMobile": true,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"AccessoryButtonIcon": "sap-icon://edit",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://detail-view"
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Buscar ... "
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"Mode": "None",
+						"LongPressToEnable": "Multiple",
+						"ExitOnLastDeselect": true
+					}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleListadoObs",
+	"Caption": "Observaciones",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://delete",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

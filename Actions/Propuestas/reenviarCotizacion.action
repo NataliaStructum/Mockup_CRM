@@ -1,0 +1,24 @@
+{
+	"_Type": "Action.Type.PopoverMenu",
+	"ActionResult": {
+		"_Name": "reenviarCotizacion"
+	},
+	"PopoverItems": [
+		{
+			"Title": "Reenviar al cliente",
+			"Icon": "sap-icon://customer-and-contacts",
+			"Style": "",
+			"OnPress": "",
+			"Visible": true,
+			"Enabled": true
+		},
+		{
+			"Title": "Reenviar a otro destino",
+			"Icon": "sap-icon://email",
+			"Style": "",
+			"OnPress": "",
+			"Visible": true,
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"_Type": "Action.Type.PopoverMenu",
+	"ActionResult": {
+		"_Name": "PopMenuVisita"
+	},
+	"PopoverItems": [
+		{
+			"Title": "Visitar al cliente",
+			"Icon": "sap-icon://visits",
+			"Style": "",
+			"OnPress": {
+				"Name": "/crmMock/Actions/GenericNavigation.action",
+				"Properties": {
+					"PageToOpen": "/crmMock/Pages/Visitas/VisitarCliente.page"
+				}
+			},
+			"Visible": true,
+			"Enabled": true
+		},
+		{
+			"Title": "Editar",
+			"Icon": "sap-icon://edit",
+			"Style": "",
+			"OnPress": {
+				"Name": "/crmMock/Actions/GenericNavigation.action",
+				"Properties": {
+					"PageToOpen": "/crmMock/Pages/Visitas/EditarVisita.page"
+				}
+			},
+			"Visible": true,
+			"Enabled": true
+		},
+		{
+			"Title": "Cancelar",
+			"Icon": "sap-icon://cancel",
+			"Style": "",
+			"OnPress": "",
+			"Visible": true,
+			"Enabled": true
+		}
+	]
+}

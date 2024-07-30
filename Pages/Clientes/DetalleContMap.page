@@ -1,0 +1,63 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "Subhead",
+						"Footnote": "{PhoneNumber}",
+						"StatusText": "Status",
+						"SubstatusText": "Substatus",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "Headline",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"Visible": true
+				},
+				{
+					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Height": 400,
+					"Module": "MapModule",
+					"Control": "MapExtension",
+					"Class": "MapClass",
+					"ExtensionProperties": {
+						"Prop": {
+							"City": "{City}",
+							"Country": "{Country}",
+							"HouseNumber": "{HouseNumber}",
+							"LastName": "{LastName}",
+							"PostalCode": "{PostalCode}",
+							"Street": "{Street}"
+						}
+					}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleContMap",
+	"Caption": "Mapa",
+	"PrefersLargeCaption": true
+}

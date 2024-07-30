@@ -1,0 +1,153 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Selecciona un material",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"OnValueChange": "/crmMock/Rules/Propuestas/Rule_agregarpreciocant.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/crmMock/Services/com_sap_edm_sampleservice_v4.service",
+									"EntitySet": "Products"
+								},
+								"ObjectCell": {
+									"Footnote": "{ShortDescription}",
+									"PreserveIconStackSpacing": false,
+									"Subhead": "{CategoryName}",
+									"Title": "{Name}",
+									"Visible": true
+								},
+								"ReturnValue": "{Price}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty1",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Precio",
+							"PlaceHolder": "Ingresa un precio",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Cantidad",
+							"PlaceHolder": "Ingresa la cantidad",
+							"OnValueChange": "/crmMock/Rules/Propuestas/Rule_agregarsubtotalivatotal.js",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "subtotal",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Subtotal",
+							"PlaceHolder": "Ingresa un subtotal",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty3",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "IVA",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty4",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Valor Total",
+							"PlaceHolder": "PlaceHolder",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "Ingresa una fecha",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "FormCellDatePicker0",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Fecha de entrega",
+							"IsEditable": true,
+							"Mode": "Date"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": false,
+							"Separator": true,
+							"Title": "Agregar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/ClosePage.action",
+								"Properties": {
+									"NavigateBackToPage": "AgregarCotizacion"
+								}
+							}
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "formulario"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "AgregarProducto",
+	"Caption": "Nuevo producto",
+	"PrefersLargeCaption": true
+}

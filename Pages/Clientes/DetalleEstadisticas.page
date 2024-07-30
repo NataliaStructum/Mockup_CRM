@@ -1,0 +1,137 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"KPIHeader": {
+						"KPIItems": [
+							{
+								"_Name": "KPIItem0",
+								"CaptionLabel": "Volumen de compra",
+								"MetricItems": [
+									{
+										"Value": "32",
+										"TrailingUnit": "%",
+										"_Name": "KPIItem0MetricItem0"
+									}
+								],
+								"ShowProgress": true,
+								"Progress": 0.32
+							}
+						]
+					},
+					"_Type": "Section.Type.KPIHeader",
+					"_Name": "SectionKPIHeader0",
+					"Visible": true
+				},
+				{
+					"_Type": "Section.Type.AnalyticCardCollection",
+					"_Name": "SectionAnalyticCardCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true
+					},
+					"AnalyticCards": [
+						{
+							"_Type": "Card.Type.Chart",
+							"_Name": "CardTypeChart1",
+							"ChartType": "Column",
+							"Title": "Estacionalidad",
+							"Subtitle": "Estacionalidades del cliente",
+							"TrendImage": "res://arrow_up.png",
+							"IsTrendUpward": true,
+							"TrendTitle": "Abril",
+							"LeadingUnit": "$",
+							"Metric": "3,307,000",
+							"TrailingUnit": "USD",
+							"SeriesTitle": [
+								"Primer Semestre"
+							],
+							"SeriesColor": [
+								"#5899DA"
+							],
+							"DataSeries": {
+								"Data": [
+									[
+										431000,
+										494000,
+										491000,
+										536000,
+										675000,
+										680000
+									]
+								],
+								"CategoryTitles": [
+									"Ene",
+									"Feb",
+									"Mar",
+									"Abr",
+									"May",
+									"Jun"
+								],
+								"CategoryLabelVisible": true,
+								"NumericLabelVisible": false
+							}
+						}
+					]
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Ver Indicadores de cartera",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://list",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Indicadores",
+	"Caption": "Indicadores",
+	"PrefersLargeCaption": true
+}

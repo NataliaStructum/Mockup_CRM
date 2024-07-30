@@ -1,0 +1,108 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Selecciona un cliente",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"FilterProperty": "FirstName",
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/crmMock/Services/com_sap_edm_sampleservice_v4.service",
+									"EntitySet": "Customers"
+								},
+								"ObjectCell": {
+									"PreserveIconStackSpacing": false,
+									"Subhead": "{Street} {HouseNumber}",
+									"Title": "{FirstName} {LastName}",
+									"Visible": true
+								},
+								"ReturnValue": "{CustomerID}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Cotizaciones",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://my-sales-order",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/crmMock/Pages/Propuestas/cotizaciones.page"
+								}
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Ordenes de Compra",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://bbyd-active-sales",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/crmMock/Pages/Propuestas/ordenes.page"
+								}
+							}
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "seleccionarCliente",
+	"Caption": "Propuestas Comerciales",
+	"PrefersLargeCaption": true
+}

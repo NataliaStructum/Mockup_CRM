@@ -1,0 +1,128 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "Fecha PQR: 20-jun-24",
+						"Description": "Tipo solicitud: Documental",
+						"DetailImage": "sap-icon://status-critical",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							"Abierto"
+						],
+						"BodyText": "Descripción detallada de lo que incluye la solicitud",
+						"HeadlineText": "{SupplierID}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "{SupplierName}",
+							"_Name": "KeyValue0",
+							"KeyName": "Razon Social",
+							"Visible": true
+						},
+						{
+							"Value": "{Street}",
+							"_Name": "KeyValue1",
+							"KeyName": "Dirección",
+							"Visible": true
+						},
+						{
+							"Value": "{PhoneNumber}",
+							"_Name": "KeyValue2",
+							"KeyName": "Telefono",
+							"Visible": true
+						},
+						{
+							"Value": "{EmailAddress}",
+							"_Name": "KeyValue3",
+							"KeyName": "Correo electronico",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Header": {
+						"_Name": "SectionHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Información del cliente"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": "Enter Date",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "FormCellDatePicker0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Fecha de cierre",
+							"IsEditable": true,
+							"Mode": "Datetime"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Cerrar Solicitud",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Negative",
+							"Image": "sap-icon://message-error",
+							"ImagePosition": "Leading",
+							"Enabled": true
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleSolicitud",
+	"Caption": "Detalle",
+	"PrefersLargeCaption": true
+}

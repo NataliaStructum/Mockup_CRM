@@ -1,0 +1,108 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ContactCell",
+					"_Name": "SectionContactCell1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ContactCells": [
+						{
+							"ContactCell": {
+								"DataSubscriptions": [
+									"Customers"
+								],
+								"_Name": "ContactCellItem0",
+								"DetailImage": "res://contact.png",
+								"Headline": "{FirstName} {LastName}",
+								"Subheadline": "{CustomerID}",
+								"Description": "",
+								"Visible": true,
+								"ActivityItems": [
+									{
+										"_Name": "ContactCellItem0ActivityItems0",
+										"ActivityType": "Phone",
+										"ActivityValue": "{PhoneNumber}"
+									},
+									{
+										"_Name": "ContactCellItem0ActivityItems1",
+										"ActivityType": "Email",
+										"ActivityValue": "{EmailAddress}"
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Información",
+					"PageToOpen": "/crmMock/Pages/Clientes/DetalleClientesInfo.page",
+					"_Name": "TabItem0",
+					"ResetIfPressedWhenActive": false
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Redes",
+					"PageToOpen": "/crmMock/Pages/Clientes/DetalleCLientesRedes.page",
+					"_Name": "TabItem1"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Documentos",
+					"PageToOpen": "/crmMock/Pages/Clientes/DetalleClientesDoc.page",
+					"_Name": "TabItem2"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Contactos",
+					"PageToOpen": "/crmMock/Pages/Clientes/DetalleClientesCont.page",
+					"_Name": "TabItem3"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Observaciones",
+					"PageToOpen": "/crmMock/Pages/Clientes/DetalleClientesObs.page",
+					"_Name": "TabItem4"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Estadisticas",
+					"PageToOpen": "/crmMock/Pages/Clientes/DetalleEstadisticas.page",
+					"_Name": "TabItem5"
+				}
+			],
+			"PreloadTabs": [
+				1
+			],
+			"Position": "Top",
+			"TabStripType": "Normal",
+			"SwipeEnabled": true
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleClientes",
+	"Caption": "Detalle Cliente"
+}

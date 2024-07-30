@@ -1,0 +1,65 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "Receptor",
+						"Footnote": "Tipo de hallazgo",
+						"Description": "Causa de la reclamación",
+						"StatusText": "Internacional",
+						"SubstatusText": "Fecha: 20-jun-24",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							"Abierto"
+						],
+						"BodyText": "Espacio para la descripción detallada de la no conformidad",
+						"HeadlineText": "{SupplierID}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"Visible": true
+				}
+			]
+		},
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Cliente",
+					"PageToOpen": "/crmMock/Pages/pqr/infoCliente.page",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Producto",
+					"PageToOpen": "/crmMock/Pages/pqr/InfoProducto.page",
+					"_Name": "TabItem1"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Acciones",
+					"PageToOpen": "/crmMock/Pages/pqr/AccionesReclamaciones.page",
+					"_Name": "TabItem2"
+				}
+			],
+			"Position": "Top",
+			"TabStripType": "Normal",
+			"SwipeEnabled": true
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleReclamacion",
+	"Caption": "Detalle"
+}

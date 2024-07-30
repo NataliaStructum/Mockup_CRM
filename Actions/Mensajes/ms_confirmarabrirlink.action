@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ms_confirmarabrirlink"
+	},
+	"Message": "Deseas salir de la aplicación?",
+	"Title": "Confirmar",
+	"OKCaption": "Aceptar",
+	"CancelCaption": "Cancelar"
+}

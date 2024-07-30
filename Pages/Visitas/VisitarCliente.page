@@ -1,0 +1,111 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "{Address/Street} {Address/HouseNumber}",
+						"Footnote": "Fecha visita: 2024-06-21",
+						"Description": "Hora visita: 7:30 a.m",
+						"DetailImage": "sap-icon://status-in-process",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "{SupplierName}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"Visible": true
+				},
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": true,
+							"Caption": "Temas de la visita",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"PickerItems": [
+								"Relación Comercial",
+								"Cupo Factoring",
+								"Conjuntas",
+								"Proyectos",
+								"Nuevos Proyectos",
+								"Servicio y Logística",
+								"Otros"
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.Note",
+							"_Name": "FormCellNote0",
+							"IsVisible": true,
+							"Separator": true,
+							"PlaceHolder": "Observaciones",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Attachment",
+							"_Name": "FormCellAttachment0",
+							"IsVisible": true,
+							"Separator": true,
+							"AttachmentActionType": [
+								"AddPhoto",
+								"TakePhoto",
+								"SelectFile"
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Terminar Visita",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Negative",
+							"Image": "sap-icon://sys-cancel",
+							"ImagePosition": "Leading",
+							"Enabled": true
+						}
+					]
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "VisitarCliente",
+	"Caption": "Visita Activa",
+	"PrefersLargeCaption": true
+}

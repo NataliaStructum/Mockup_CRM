@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavTo_UpdateDoc"
+	},
+	"PageToOpen": "/crmMock/Pages/Clientes/UpdateDoc.page"
+}

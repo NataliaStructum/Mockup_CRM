@@ -1,0 +1,380 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Contactos"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell0",
+								"Title": "{FirstName} {LastName}",
+								"Visible": true,
+								"Selected": false,
+								"Tags": [
+									{
+										"Color": "Blue",
+										"Text": "Compras"
+									}
+								],
+								"Subhead": "Cargo",
+								"Footnote": "Correo: {EmailAddress}",
+								"Description": "Cumpleaños: {DateOfBirth}",
+								"DisplayDescriptionInMobile": true,
+								"SubstatusText": "Tel: {PhoneNumber}",
+								"AccessoryButtonIcon": "sap-icon://edit",
+								"AccessoryType": "None",
+								"PreserveIconStackSpacing": false,
+								"OnAccessoryButtonPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/Clientes/DetalleEditarCont.page"
+									}
+								},
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "sap-icon://customer-and-contacts"
+										}
+									],
+									"ImageIsCircular": false,
+									"ImageHasBorder": false
+								},
+								"AvatarGrid": {
+									"Avatars": [],
+									"ImageIsCircular": true
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell1",
+								"Title": "{FirstName} {LastName}",
+								"Visible": true,
+								"Selected": false,
+								"Tags": [
+									{
+										"Color": "Indigo",
+										"Text": "Logística "
+									}
+								],
+								"Subhead": "Cargo",
+								"Footnote": "Correo: {EmailAddress}",
+								"Description": "Cumpleaños: {DateOfBirth}",
+								"DisplayDescriptionInMobile": true,
+								"SubstatusText": "Tel: {PhoneNumber}",
+								"AccessoryButtonIcon": "sap-icon://edit",
+								"AccessoryType": "None",
+								"PreserveIconStackSpacing": false,
+								"ProgressIndicator": "InProgress",
+								"OnAccessoryButtonPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/Clientes/DetalleEditarCont.page"
+									}
+								},
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "sap-icon://customer-and-contacts"
+										}
+									],
+									"ImageIsCircular": false,
+									"ImageHasBorder": false
+								},
+								"AvatarGrid": {
+									"Avatars": [],
+									"ImageIsCircular": false
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell2",
+								"Title": "{FirstName} {LastName}",
+								"Visible": true,
+								"Selected": false,
+								"Tags": [
+									{
+										"Color": "Teal",
+										"Text": "Tesorería "
+									}
+								],
+								"Subhead": "Cargo",
+								"Footnote": "Correo: {EmailAddress}",
+								"Description": "Cumpleaños: {DateOfBirth}",
+								"DisplayDescriptionInMobile": true,
+								"StatusText": "Status",
+								"SubstatusText": "Tel: {PhoneNumber}",
+								"AccessoryButtonIcon": "sap-icon://edit",
+								"AccessoryType": "None",
+								"PreserveIconStackSpacing": false,
+								"ProgressIndicator": "InProgress",
+								"OnAccessoryButtonPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/Clientes/DetalleEditarCont.page"
+									}
+								},
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "sap-icon://customer-and-contacts"
+										}
+									],
+									"ImageIsCircular": false,
+									"ImageHasBorder": false
+								},
+								"AvatarGrid": {
+									"Avatars": [],
+									"ImageIsCircular": false
+								}
+							}
+						}
+					],
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Agregar Contacto",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true
+						}
+					]
+				},
+				{
+					"Header": {
+						"_Name": "SectionHeader2",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Ubicaciones"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"_Name": "SectionObjectTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell3",
+								"Title": "{Street} {HouseNumber}",
+								"Visible": true,
+								"Selected": false,
+								"Tags": [
+									{
+										"Color": "Grey",
+										"Text": "Planta"
+									}
+								],
+								"Subhead": "{City}",
+								"Footnote": "{Country}",
+								"DisplayDescriptionInMobile": true,
+								"AccessoryType": "None",
+								"PreserveIconStackSpacing": false,
+								"OnPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/Clientes/DetalleContMap.page"
+									}
+								},
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "sap-icon://map"
+										}
+									],
+									"ImageIsCircular": false,
+									"ImageHasBorder": false
+								},
+								"AvatarGrid": {
+									"Avatars": [],
+									"ImageIsCircular": true
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell4",
+								"Title": "{Street} {HouseNumber}",
+								"Visible": true,
+								"Selected": false,
+								"Tags": [
+									{
+										"Color": "Grey",
+										"Text": "Oficina"
+									}
+								],
+								"Subhead": "{City}",
+								"Footnote": "{Country}",
+								"DisplayDescriptionInMobile": true,
+								"AccessoryType": "None",
+								"PreserveIconStackSpacing": false,
+								"OnPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/Clientes/DetalleContMap.page"
+									}
+								},
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "sap-icon://map"
+										}
+									],
+									"ImageIsCircular": false,
+									"ImageHasBorder": false
+								},
+								"AvatarGrid": {
+									"Avatars": [],
+									"ImageIsCircular": true
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell5",
+								"Title": "{Street} {HouseNumber}",
+								"Visible": true,
+								"Selected": false,
+								"Tags": [
+									{
+										"Color": "Grey",
+										"Text": "Bodega"
+									}
+								],
+								"Subhead": "{City}",
+								"Footnote": "{Country}",
+								"DisplayDescriptionInMobile": true,
+								"AccessoryType": "None",
+								"PreserveIconStackSpacing": false,
+								"OnPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/Clientes/DetalleContMap.page"
+									}
+								},
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "sap-icon://map"
+										}
+									],
+									"ImageIsCircular": false,
+									"ImageHasBorder": false
+								},
+								"AvatarGrid": {
+									"Avatars": [],
+									"ImageIsCircular": true
+								}
+							}
+						}
+					],
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton2",
+							"Title": "Agregar Ubicación",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true
+						}
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleClientesCont",
+	"PrefersLargeCaption": true
+}

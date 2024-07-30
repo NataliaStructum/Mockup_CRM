@@ -1,0 +1,60 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "Cliente: {Customer/FirstName} {Customer/LastName}",
+						"Footnote": "Tel: {Customer/PhoneNumber}",
+						"Description": "Dirección: {Customer/Street} {Customer/HouseNumber}",
+						"StatusText": "$(D,{CreatedAt})",
+						"SubstatusText": "$(C,{GrossAmount},{CurrencyCode})",
+						"DetailImage": "sap-icon://product",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							"Aceptado"
+						],
+						"BodyText": "Email: {Customer/EmailAddress}",
+						"HeadlineText": "ID: {SalesOrderID}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"Visible": true
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		},
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Productos",
+					"PageToOpen": "/crmMock/Pages/Propuestas/OrdenProductos.page",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Acciones",
+					"PageToOpen": "/crmMock/Pages/Propuestas/AccionesOrden.page",
+					"_Name": "TabItem1"
+				}
+			],
+			"Position": "Top",
+			"TabStripType": "Normal",
+			"SwipeEnabled": true
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleOrden",
+	"Caption": "Detalle"
+}

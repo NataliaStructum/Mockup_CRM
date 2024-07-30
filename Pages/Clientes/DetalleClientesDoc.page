@@ -1,0 +1,166 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectCardCollection",
+					"_Name": "SectionObjectCardCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Cards": [
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard0",
+							"Visible": true,
+							"Subhead": "Formulario actualización de clientes",
+							"DetailImage": "res://mdk_logo.png",
+							"DetailImageIsCircular": false,
+							"PrimaryAction": {
+								"Title": "Ver",
+								"Visible": true
+							},
+							"SecondaryAction": {
+								"OnPress": "/crmMock/Actions/Navegacion/NavTo_UpdateDoc.action",
+								"Title": "Actualizar",
+								"Visible": true
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard1",
+							"Visible": true,
+							"Subhead": "Acuerdo de Seguridad",
+							"DetailImage": "res://mdk_logo.png",
+							"DetailImageIsCircular": false,
+							"PrimaryAction": {
+								"Title": "Ver",
+								"Visible": true
+							},
+							"SecondaryAction": {
+								"Title": "Actualizar",
+								"Visible": true
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard2",
+							"Visible": true,
+							"Subhead": "Cámara de Comercio",
+							"DetailImage": "res://mdk_logo.png",
+							"DetailImageIsCircular": false,
+							"PrimaryAction": {
+								"Title": "Ver",
+								"Visible": true
+							},
+							"SecondaryAction": {
+								"Title": "Actualizar",
+								"Visible": true
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard3",
+							"Visible": true,
+							"Subhead": "RUT",
+							"DetailImage": "res://mdk_logo.png",
+							"DetailImageIsCircular": false,
+							"PrimaryAction": {
+								"Title": "Ver",
+								"Visible": true
+							},
+							"SecondaryAction": {
+								"Title": "Actualizar",
+								"Visible": true
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard4",
+							"Visible": true,
+							"Subhead": "Estados Financieros",
+							"DetailImage": "res://mdk_logo.png",
+							"DetailImageIsCircular": false,
+							"PrimaryAction": {
+								"Title": "Ver",
+								"Visible": true
+							},
+							"SecondaryAction": {
+								"Title": "Actualizar",
+								"Visible": true
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard5",
+							"Visible": true,
+							"Subhead": "Cedula Representante legal",
+							"DetailImage": "res://mdk_logo.png",
+							"DetailImageIsCircular": false,
+							"PrimaryAction": {
+								"Title": "Ver",
+								"Visible": true
+							},
+							"SecondaryAction": {
+								"Title": "Actualizar",
+								"Visible": true
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard6",
+							"Visible": true,
+							"Subhead": "Certificado Bancario",
+							"DetailImage": "res://mdk_logo.png",
+							"DetailImageIsCircular": false,
+							"PrimaryAction": {
+								"Title": "Ver",
+								"Visible": true
+							},
+							"SecondaryAction": {
+								"Title": "Actualizar",
+								"Visible": true
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard7",
+							"Visible": true,
+							"Subhead": "Referencias Comerciales",
+							"DetailImage": "res://mdk_logo.png",
+							"DetailImageIsCircular": false,
+							"PrimaryAction": {
+								"Title": "Ver",
+								"Visible": true
+							},
+							"SecondaryAction": {
+								"Title": "Actualizar",
+								"Visible": true
+							}
+						}
+					],
+					"Layout": {
+						"LayoutType": "Vertical"
+					}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleClientesDoc",
+	"PrefersLargeCaption": true
+}

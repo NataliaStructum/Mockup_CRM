@@ -1,0 +1,266 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "{FirstName}",
+							"_Name": "KeyValue0",
+							"KeyName": "Razon social",
+							"Visible": true
+						},
+						{
+							"Value": "{Address/Street} {Address/HouseNumber}",
+							"_Name": "KeyValue1",
+							"KeyName": "Dirección",
+							"Visible": true
+						},
+						{
+							"Value": "{HouseNumber}",
+							"_Name": "KeyValue2",
+							"KeyName": "Telefono",
+							"Visible": true
+						},
+						{
+							"Value": "{EmailAddress}",
+							"_Name": "KeyValue3",
+							"KeyName": "Correo electronico",
+							"Visible": true
+						},
+						{
+							"Value": "{DateOfBirth}",
+							"_Name": "KeyValue4",
+							"KeyName": "Fecha de creación",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Header": {
+						"_Name": "SectionHeader3",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Información Básica"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Editar Información",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Normal",
+							"Image": "sap-icon://edit",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/crmMock/Pages/Clientes/DetalleEditarInfo.page"
+								}
+							}
+						}
+					]
+				},
+				{
+					"Header": {
+						"_Name": "SectionHeader4",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Clasificación"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": false,
+							"Caption": "Criticidad",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"PickerItems": [
+								"One",
+								"Two",
+								"Three"
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker1",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": true,
+							"AllowEmptySelection": false,
+							"Caption": "Tipo",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"PickerItems": [
+								"One",
+								"Two",
+								"Three"
+							]
+						}
+					]
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "Value",
+							"_Name": "KeyValue5",
+							"KeyName": "Sector Económico",
+							"Visible": true
+						},
+						{
+							"Value": "Value",
+							"_Name": "KeyValue6",
+							"KeyName": "Tipo de Industria",
+							"Visible": true
+						},
+						{
+							"Value": "Value",
+							"_Name": "KeyValue7",
+							"KeyName": "Canal de Distribución",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Header": {
+						"_Name": "SectionHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Segmentación"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton1",
+							"Title": "Editar Segmentación",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://edit",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/crmMock/Pages/Clientes/DetalleEditarSeg.page"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleClientesInfo",
+	"PrefersLargeCaption": true
+}

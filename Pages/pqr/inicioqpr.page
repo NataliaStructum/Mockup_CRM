@@ -1,0 +1,117 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": true,
+						"FooterSeparator": false,
+						"ControlSeparator": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Reclamaciones",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://high-priority",
+							"ImagePosition": "Leading",
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/crmMock/Pages/pqr/ListaReclamaciones.page"
+								}
+							}
+						}
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Center"
+					}
+				},
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": false,
+						"FooterSeparator": true,
+						"ControlSeparator": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton1",
+							"Title": "Solicitudes",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://message-popup",
+							"ImagePosition": "Leading",
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/crmMock/Pages/pqr/ListaSolicitudes.page"
+								}
+							}
+						}
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Center"
+					}
+				},
+				{
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": true,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": true,
+						"FooterSeparator": false,
+						"ControlSeparator": false
+					},
+					"Image": "/crmMock/Images/handshake.png",
+					"Height": 120,
+					"Alignment": "Center",
+					"ContentMode": "ScaleAspectFit",
+					"PaddingTop": 80,
+					"PaddingBottom": 20
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "iniciopqr",
+	"Caption": "PQR",
+	"PrefersLargeCaption": true
+}

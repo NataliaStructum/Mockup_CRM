@@ -1,0 +1,108 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/crmMock/Services/com_sap_edm_sampleservice_v4.service",
+						"EntitySet": "Suppliers",
+						"QueryOptions": "$expand=Products"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
+						"Title": "{SupplierName}",
+						"Subhead": "Fecha PQR: 20-jun-24",
+						"Description": "Tipo Solicitud: Documental",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "Fe. Cierre: ",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"Tags": [
+							{
+								"Color": "Green",
+								"Text": "Abierto"
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://message-popup"
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": {
+							"Name": "/crmMock/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/crmMock/Pages/pqr/DetalleSolicitud.page"
+							}
+						},
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ListaSolicitudes",
+	"Caption": "Solicitudes",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": {
+					"Name": "/crmMock/Actions/GenericNavigation.action",
+					"Properties": {
+						"PageToOpen": "/crmMock/Pages/pqr/AgregarSolicitud.page"
+					}
+				}
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

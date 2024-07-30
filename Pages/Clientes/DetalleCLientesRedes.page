@@ -1,0 +1,170 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton4",
+							"Alignment": "Right",
+							"ButtonType": "Text",
+							"Semantic": "Normal",
+							"Image": "sap-icon://edit",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/crmMock/Pages/Clientes/DetalleEditarRedes.page"
+								}
+							}
+						}
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton3",
+							"Title": "Sitio web",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Normal",
+							"Image": "sap-icon://internet-browser",
+							"ImagePosition": "Leading",
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true
+						},
+						{
+							"_Name": "SectionButton0",
+							"Title": "LinkedIn",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Normal",
+							"Image": "/crmMock/Images/link.png",
+							"ImagePosition": "Leading",
+							"ImageSize": {
+								"Height": 26,
+								"Width": 26
+							},
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/crmMock/Rules/Clientes/openLink.js"
+						},
+						{
+							"_Name": "SectionButton1",
+							"Title": "Instagram",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Normal",
+							"Image": "/crmMock/Images/instagram.png",
+							"ImagePosition": "Leading",
+							"ImageSize": {
+								"Height": 20,
+								"Width": 20
+							},
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true
+						},
+						{
+							"_Name": "SectionButton2",
+							"Title": "Facebook",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Normal",
+							"Image": "/crmMock/Images/facebook.png",
+							"ImagePosition": "Leading",
+							"ImageSize": {
+								"Height": 20,
+								"Width": 20
+							},
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true
+						}
+					]
+				},
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable2",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton6",
+							"Title": "Agregar Red",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true
+						}
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleCLientesRedes",
+	"PrefersLargeCaption": true
+}

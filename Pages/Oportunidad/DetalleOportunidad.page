@@ -1,0 +1,109 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ContactCell",
+					"_Name": "SectionContactCell0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ContactCells": [
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem0",
+								"DetailImage": "sap-icon://leads",
+								"Headline": "{Customer/FirstName} {Customer/LastName}",
+								"Subheadline": "$(D,{CreatedAt})",
+								"Description": "",
+								"Visible": true,
+								"ActivityItems": [
+									{
+										"_Name": "ContactCellItem0ActivityItems0",
+										"ActivityType": "Phone",
+										"ActivityValue": "{Customer/PhoneNumber}"
+									},
+									{
+										"_Name": "ContactCellItem0ActivityItems1",
+										"ActivityType": "Email",
+										"ActivityValue": "{Customer/EmailAddress}"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Crear Cliente",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true
+						}
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		},
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Información",
+					"PageToOpen": "/crmMock/Pages/Oportunidad/DetalleInfo.page",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Requerimientos",
+					"PageToOpen": "/crmMock/Pages/Oportunidad/DetalleObs.page",
+					"_Name": "TabItem1"
+				}
+			],
+			"Position": "Top",
+			"TabStripType": "Normal",
+			"SwipeEnabled": true
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleOportunidad",
+	"Caption": "Detalle"
+}

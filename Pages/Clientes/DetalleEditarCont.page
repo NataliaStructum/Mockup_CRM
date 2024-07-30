@@ -1,0 +1,132 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": "{FirstName} {LastName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Nombre",
+							"PlaceHolder": "Ingresa el nombre",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "Cargo",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty1",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Cargo",
+							"PlaceHolder": "Ingresa el cargo",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{PhoneNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty2",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Telefono",
+							"PlaceHolder": "PlaceHolder",
+							"KeyboardType": "Phone",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{EmailAddress}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty3",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Correo",
+							"PlaceHolder": "Ingresa el correo",
+							"KeyboardType": "Email",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsVisible": true,
+							"Separator": false,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Tipo de contacto",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"PickerItems": [
+								"Compras",
+								"Logística",
+								"Tesorería",
+								"Calidad"
+							]
+						},
+						{
+							"Value": "{DateOfBirth}",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "FormCellDatePicker0",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Fecha de cumpleaños",
+							"IsEditable": true,
+							"Mode": "Date"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Actualizar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Trailing",
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/ClosePage.action",
+								"Properties": {
+									"NavigateBackToPage": "DetalleClientes"
+								}
+							}
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Page0",
+	"Caption": "Editar contacto",
+	"PrefersLargeCaption": true
+}

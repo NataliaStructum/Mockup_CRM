@@ -1,0 +1,101 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": "{FirstName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Razon social",
+							"PlaceHolder": "Ingresa la razón social",
+							"KeyboardType": "Default",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{Address/Street} {Address/HouseNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty1",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Dirección",
+							"PlaceHolder": "Ingresa una dirección",
+							"KeyboardType": "Default",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{PhoneNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty2",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Telefono",
+							"PlaceHolder": "Ingresa un telefono",
+							"KeyboardType": "Phone",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{EmailAddress}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty3",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Correo electronico",
+							"PlaceHolder": "Ingresa el correo ",
+							"KeyboardType": "Email",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Actualizar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/ClosePage.action",
+								"Properties": {
+									"NavigateBackToPage": "DetalleClientes"
+								}
+							}
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleEditarInfo",
+	"Caption": "Editar",
+	"PrefersLargeCaption": true
+}

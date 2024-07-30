@@ -1,0 +1,287 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"FastFilters": [
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter0",
+						"Label": "Estado",
+						"DisplayValue": "Pendiente",
+						"ReturnValue": "Pendiente",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter1",
+						"Label": "Estado",
+						"DisplayValue": "No aceptada",
+						"ReturnValue": "No aceptada",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter2",
+						"Label": "Estado",
+						"DisplayValue": "Aceptada",
+						"ReturnValue": "Aceptada",
+						"FilterType": "Filter"
+					}
+				],
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/crmMock/Services/com_sap_edm_sampleservice_v4.service",
+						"EntitySet": "SalesOrderHeaders",
+						"QueryOptions": "$top=3&$expand=Customer"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
+						"Title": "{SalesOrderID}",
+						"Subhead": "{Customer/FirstName} {Customer/LastName}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode})",
+						"SubstatusText": "$(D,{CreatedAt})",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"Tags": [
+							{
+								"Color": "Mango",
+								"Text": "Pendiente"
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://sales-order-item"
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": {
+							"Name": "/crmMock/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/crmMock/Pages/Propuestas/DetalleOrden.page"
+							}
+						},
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"Mode": "None",
+						"LongPressToEnable": "Multiple",
+						"ExitOnLastDeselect": true
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/crmMock/Services/com_sap_edm_sampleservice_v4.service",
+						"EntitySet": "SalesOrderHeaders",
+						"QueryOptions": "$top=2&$expand=Customer"
+					},
+					"_Name": "SectionObjectTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
+						"Title": "{SalesOrderID}",
+						"Subhead": "{Customer/FirstName} {Customer/LastName}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode})",
+						"SubstatusText": "$(D,{CreatedAt})",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"Tags": [
+							{
+								"Color": "Green",
+								"Text": "Aceptada"
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://sales-order-item"
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": {
+							"Name": "/crmMock/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/crmMock/Pages/Propuestas/DetalleOrden.page"
+							}
+						},
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"Mode": "None",
+						"LongPressToEnable": "Multiple",
+						"ExitOnLastDeselect": true
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/crmMock/Services/com_sap_edm_sampleservice_v4.service",
+						"EntitySet": "SalesOrderHeaders",
+						"QueryOptions": "$top=2&$expand=Customer"
+					},
+					"_Name": "SectionObjectTable2",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
+						"Title": "{SalesOrderID}",
+						"Subhead": "{Customer/FirstName} {Customer/LastName}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode})",
+						"SubstatusText": "$(D,{CreatedAt})",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"Tags": [
+							{
+								"Color": "Red",
+								"Text": "No aceptada"
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://sales-order-item"
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": {
+							"Name": "/crmMock/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/crmMock/Pages/Propuestas/DetalleOrden.page"
+							}
+						},
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"Mode": "None",
+						"LongPressToEnable": "Multiple",
+						"ExitOnLastDeselect": true
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ordenes",
+	"Caption": "Ordenes de compra",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem2",
+				"Caption": "Item",
+				"Icon": "sap-icon://message-error",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Aceptar",
+				"Icon": "sap-icon://message-success",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

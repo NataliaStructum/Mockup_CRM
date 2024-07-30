@@ -1,0 +1,170 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": false,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"Image": "/crmMock/Images/logo.PNG",
+					"Height": 80,
+					"Alignment": "Center",
+					"ContentMode": "ScaleAspectFit"
+				},
+				{
+					"ObjectHeader": {
+						"Subhead": "INGENIO RISARALDA SA",
+						"Footnote": "#Application/#AppData/UserId",
+						"Description": "/crmMock/Globals/Application/AppDefinition_Version.global",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "App Name CRM",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Styles": {
+							"ObjectHeader": "headerMain",
+							"Description": "headerMainHeadlineText",
+							"Footnote": "headerMainHeadlineText",
+							"HeadlineText": "headerMainHeadlineText",
+							"Subhead": "headerMainHeadlineText"
+						}
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ContactCell",
+					"_Name": "SectionContactCell0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ContactCells": [
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem0",
+								"DetailImage": "sap-icon://customer-and-contacts",
+								"Headline": "Clientes",
+								"Subheadline": "Consulta y actualiza tus clientes",
+								"Description": "",
+								"Visible": true,
+								"OnPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/Clientes/ListaClientes.page"
+									}
+								}
+							}
+						},
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem1",
+								"DetailImage": "sap-icon://decision",
+								"Headline": "Propuestas comerciales",
+								"Subheadline": "Cotizaciones y ordenes de compra",
+								"Description": "",
+								"Visible": true,
+								"OnPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/Propuestas/seleccionarCliente.page"
+									}
+								}
+							}
+						},
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem2",
+								"DetailImage": "sap-icon://collaborate",
+								"Headline": "Oportunidades de negocio",
+								"Subheadline": "Gestiona oportunidades de negocio",
+								"Description": "",
+								"Visible": true,
+								"OnPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/Oportunidad/ListaOportunidades.page"
+									}
+								}
+							}
+						},
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem3",
+								"DetailImage": "sap-icon://visits",
+								"Headline": "Plan de visitas",
+								"Subheadline": "Gestiona tus visitas",
+								"Description": "",
+								"Visible": true,
+								"OnPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/Visitas/inicioVisitas.page"
+									}
+								}
+							}
+						},
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem4",
+								"DetailImage": "sap-icon://order-status",
+								"Headline": "PQR",
+								"Subheadline": "Gestiona tus PQR",
+								"Description": "",
+								"Visible": true,
+								"OnPress": {
+									"Name": "/crmMock/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/crmMock/Pages/pqr/inicioqpr.page"
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Inicio",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/crmMock/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

@@ -1,0 +1,119 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Header": {
+						"_Name": "SectionHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Información general"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "12345678",
+							"_Name": "KeyValue4",
+							"KeyName": "Codigo SAP",
+							"Visible": true
+						},
+						{
+							"Value": "Value",
+							"_Name": "KeyValue0",
+							"KeyName": "Razón Social",
+							"Visible": true
+						},
+						{
+							"Value": "{Street}",
+							"_Name": "KeyValue1",
+							"KeyName": "Dirección",
+							"Visible": true
+						},
+						{
+							"Value": "{PhoneNumber}",
+							"_Name": "KeyValue2",
+							"KeyName": "Telefono",
+							"Visible": true
+						},
+						{
+							"Value": "{EmailAddress}",
+							"_Name": "KeyValue3",
+							"KeyName": "Correo",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"_Type": "Section.Type.ContactCell",
+					"_Name": "SectionContactCell0",
+					"Header": {
+						"_Name": "SectionHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Contactos"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ContactCells": [
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem0",
+								"DetailImage": "",
+								"Headline": "{SupplierName}",
+								"Subheadline": "Cargo",
+								"Description": "",
+								"Visible": true,
+								"ActivityItems": [
+									{
+										"_Name": "ContactCellItem0ActivityItems0",
+										"ActivityType": "Phone",
+										"ActivityValue": "{PhoneNumber}"
+									},
+									{
+										"_Name": "ContactCellItem0ActivityItems1",
+										"ActivityType": "Email",
+										"ActivityValue": "{EmailAddress}"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "infoCliente",
+	"PrefersLargeCaption": true
+}

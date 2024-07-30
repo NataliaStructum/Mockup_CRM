@@ -1,0 +1,117 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.KPIHeader",
+					"_Name": "SectionKPIHeader0",
+					"Visible": true,
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"KPIHeader": {
+						"KPIItems": [
+							{
+								"_Name": "KPIItem0",
+								"CaptionLabel": "Avances de visitas",
+								"MetricItems": [
+									{
+										"Value": "55",
+										"TrailingUnit": "%",
+										"_Name": "KPIItem0MetricItem0"
+									}
+								],
+								"ShowProgress": true,
+								"Progress": 0.5
+							}
+						]
+					}
+				},
+				{
+					"_Type": "Section.Type.ContactCell",
+					"_Name": "SectionContactCell0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ContactCells": [
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem1",
+								"DetailImage": "sap-icon://group",
+								"Headline": "Cantidad de visitas asignadas",
+								"Subheadline": "20",
+								"Description": "",
+								"Visible": true
+							}
+						},
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem0",
+								"DetailImage": "sap-icon://customer-history",
+								"Headline": "Total Visitados",
+								"Subheadline": "10",
+								"Description": "",
+								"Visible": true
+							}
+						}
+					]
+				},
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Listado de visitas realizadas",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://list",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true
+						}
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Indicadores",
+	"Caption": "Indicadores",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,102 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"Value": "www",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Sitio web",
+							"PlaceHolder": "Ingresa Sitio Web",
+							"KeyboardType": "Url",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "www",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty1",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Linkedln",
+							"PlaceHolder": "Ingresa Sitio Web",
+							"KeyboardType": "Url",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "www",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty2",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Instagram",
+							"PlaceHolder": "Ingresa Sitio Web",
+							"KeyboardType": "Url",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "www",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty3",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Facebook",
+							"PlaceHolder": "Ingresa Sitio Web",
+							"KeyboardType": "Url",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Actualizar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/crmMock/Actions/ClosePage.action",
+								"Properties": {
+									"DismissModal": "",
+									"NavigateBackToPage": "DetalleClientes"
+								}
+							}
+						}
+					]
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleEditarRedes",
+	"Caption": "Editar Redes",
+	"PrefersLargeCaption": true
+}
